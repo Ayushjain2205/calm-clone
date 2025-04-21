@@ -3,9 +3,10 @@ import Image from "next/image";
 
 interface HeaderProps {
   scrolled: boolean;
+  onTryCalmClick?: () => void;
 }
 
-export default function Header({ scrolled }: HeaderProps) {
+export default function Header({ scrolled, onTryCalmClick }: HeaderProps) {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 px-10 ${scrolled ? "bg-white shadow-sm" : "bg-transparent"}`}
@@ -51,8 +52,9 @@ export default function Header({ scrolled }: HeaderProps) {
           >
             Log In
           </Link>
-          <Link
-            href="/try-free"
+          <button
+            type="button"
+            onClick={onTryCalmClick}
             className={`text-white px-4 rounded-full inline-flex items-center justify-center font-[600] ${scrolled ? "bg-[#4655AE]" : "bg-white bg-opacity-20 backdrop-blur-sm"}`}
             style={{
               width: "200px",
@@ -61,7 +63,7 @@ export default function Header({ scrolled }: HeaderProps) {
             }}
           >
             Try Calm for Free
-          </Link>
+          </button>
           <button className="p-2 md:hidden">
             <svg
               width="24"

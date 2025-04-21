@@ -4,6 +4,7 @@ import type React from "react"
 import Link from "next/link"
 import { useEffect, useState, useRef } from "react"
 import Header from "./components/Header"
+import BreathingModal from "./components/BreathingModal"
 import Spacer from "./components/Spacer"
 import HeroSection from "./components/HeroSection"
 import BenefitsSection from "./components/BenefitsSection"
@@ -54,6 +55,8 @@ const Collapsible = ({ title, content }: { title: string; content: React.ReactNo
 }
 
 export default function Home() {
+  const [showBreathing, setShowBreathing] = useState(false);
+
   const [scrolled, setScrolled] = useState(false)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const testimonialRef = useRef<HTMLDivElement>(null)
@@ -138,12 +141,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <Header scrolled={scrolled} />
+      <Header scrolled={scrolled} onTryCalmClick={() => setShowBreathing(true)} />
 
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <HeroSection />
+        <HeroSection onTryCalmClick={() => setShowBreathing(true)} />
 
         {/* Benefits Section */}
         <BenefitsSection />
@@ -667,6 +670,7 @@ export default function Home() {
         </section>
       </main>
 
+      <BreathingModal open={showBreathing} onClose={() => setShowBreathing(false)} />
       <Footer />
     </div>
   )
