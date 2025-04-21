@@ -13,7 +13,7 @@ export default function BlogSection({ blogs, blogRef, scrollBlogLeft, scrollBlog
   return (
     <section className="py-16 bg-[#F6F6F7]">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-medium text-center mb-12 text-[rgb(26,62,111)]">
+        <h2 className="text-2xl md:text-3xl font-medium text-center mb-12 text-[rgb(26,62,111)] max-w-[600px] mx-auto leading-[56px]">
           Check out our blog for more meditation, sleep, stress, and mental health resources.
         </h2>
         <div className="relative max-w-6xl mx-auto">

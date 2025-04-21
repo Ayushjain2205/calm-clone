@@ -22,8 +22,8 @@ export default function TestimonialsSection({
 }: TestimonialsSectionProps) {
   return (
     <section className="py-16 bg-[#f8faff]">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 text-[rgb(26,62,111)]">
+      <div className="container mx-auto mt-4 px-4">
+        <h2 className="text-3xl md:text-4xl font-[600] text-center mb-12 text-[rgb(26,62,111)]">
           Over 2 million 5-star reviews.
         </h2>
         <div className="relative max-w-6xl mx-auto">

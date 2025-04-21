@@ -204,10 +204,10 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section className="container mx-auto px-4 py-16 bg-white">
-          <h2 className="text-3xl font-medium text-center mb-12 text-[rgb(26,62,111)]" id="faq-heading">
+          <h2 className="text-3xl font-[600] text-center mb-12 text-[rgb(26,62,111)]" id="faq-heading">
             Frequently Asked Questions
           </h2>
-          <div className="max-w-3xl mx-auto" aria-labelledby="faq-heading">
+          <div className="max-w-3xl mx-auto" aria-labelledby="faq-heading ">
             <h3 className="font-medium uppercase text-gray-500 mb-4">GENERAL</h3>
             <Collapsible
               title="What is Calm?"

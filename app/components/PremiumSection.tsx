@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function PremiumSection() {
   return (
     <section className="relative overflow-hidden bg-[#E3EBFE]">
-      <div className="container mx-auto px-4 py-20 text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-medium mb-12 text-[rgb(26,62,111)]">
+      <div className="container mx-auto px-4 py-[200px] text-center relative z-10">
+        <h2 className="text-3xl md:text-4xl font-[600] mb-12 text-[rgb(26,62,111)]">
           Start your free trial of<br />Calm Premium.
         </h2>
         <div className="max-w-lg mx-auto mb-8">
