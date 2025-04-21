@@ -76,7 +76,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "avenir-next-rounded-std",
+          "Avenir Next",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",

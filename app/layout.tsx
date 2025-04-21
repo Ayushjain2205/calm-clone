@@ -1,5 +1,6 @@
 import type React from "react"
 import "./globals.css"
+import "../styles/fonts.css"
 
 export const metadata = {
   title: "Calm: Meditation, Sleep, Relaxation",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/qhc1oer.css" />
+        
       </head>
       <body>{children}</body>
     </html>
